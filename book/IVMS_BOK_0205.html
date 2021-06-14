@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!--TopnavIVMS-->
+<div class="topnav">
+  <a class="active" href="#home"><img src="../img/multi-inventory-logo.png" alt="Smiley face" height="62" width="92">
+  </a>
+  <a href="#" class="title">Inventory Management System</a>
+  <div class="topnav-right">
+    <a href="#" class="down">User</a>
+    <a href="#"><i class='fa fa-user-circle' style="color:#00cc99;font-size:30px"></i></a>
+    <a href="#" class="down"><i class="fas fa-chevron-down"></i></a>
+  </div>
+</div>
+
+<!--sidenav-->
+<div class="sidenav">
+  <a href="../IVMS_HOM_0000.html"><i class="fa fa-desktop"></i>&nbsp&nbspDashboard</a>
+  <button class="dropdown-btn"><i class="fas fa-book-open"></i>&nbsp&nbsp&nbsp&nbspBook
+   <i class="fa fa-caret-down"></i>
+  </button>
+  
+  <div class="dropdown-container" >
+    <a href="#">Stock In</a>
+    <a href="IVMS_BOK_0201.html">Stock Out</a>
+  </div>
+   <button class="dropdown-btn"><i class="fas fa-tshirt"></i>&nbsp&nbsp&nbsp&nbspFashion 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../fashion/IVMS_FHN_0101.html">Stock In</a>
+    <a href="../fashion/IVMS_FHN_0201.html">Stock Out</a>
+  </div>
+  <button class="dropdown-btn"><i class='fas fa-shopping-cart'></i>&nbsp&nbsp&nbsp&nbspCosmetic 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../cosmetic/IVMS_COS_0101.html">Stock In</a>
+    <a href="../cosmetic/IVMS_COS_0201.html">Stock Out</a>
+  </div>
+  <button class="dropdown-btn"><i class="fas fa-tools"></i>&nbsp&nbsp&nbsp&nbspSetup 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../setup/IVMS_STP_0101.html">Category</a>
+    <a href="../setup/IVMS_STP_0301.html">Supplier</a>
+    <a href="../setup/IVMS_STP_0401.html">Buyer</a>
+    <a href="../setup/IVMS_STP_0502.html">Status</a>
+    <a href="../setup/IVMS_STP_0602.html">Address</a>
+    <a href="../setup/IVMS_STP_0702.html">Country</a>
+    <a href="../setup/IVMS_STP_0801.html">Brand</a>
+    <a href="../setup/IVMS_STP_0901.html">Author</a>
+    <a href="../setup/IVMS_STP_1001.html">Publisher</a>
+    <a href="../setup/IVMS_REP_0901.html">Report</a>
+  </div>
+  <a href="../user/IVMS_USR_0201.html"><i class="fa fa-user"></i>&nbsp&nbsp&nbsp&nbspManagement</a>
+</div>
+<div class="main">
+  <div class="main-content">
+   <div class="update-content">
+    <form method="get" >
+    <p class="head_title" style="width:43%;">Confirm Book Update</p>
+    
+                        <!-- <h2 class="form-title">Create account</h2> -->
+                        <table>
+                    <tr>
+                        
+                        <td style="text-align: left;">Item ID</td>
+                        <td style="text-align: left;"><input type="text" class="" name="id" id="id" placeholder="ID" size="35" value="B0016" class="table_input" disabled="disabled" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Item Name</td>
+                        <td style="text-align: left;"><input type="text" class="" name="title" id="item_name" placeholder="Title" size="35" value="An Introduction to Computer Networks" disabled="disabled" /></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;">Category</td>
+                      <td style="text-align: left;"><select id="category" disabled="disabled" class="select update" style="width:290px;">
+        <option>Computer Language</option>
+        <option>Mathematics</option>
+        <option>Data Science</option>
+        <option selected="selected">Network and communication</option>
+        <option>Software Engineering</option>
+        <option>Web Programming</option>
+      </select></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;">Log</td>
+                      <td style="text-align: left;">Shelf:<input type="text" name="shelf_no" id="shelf_no" size="2" value="3" disabled="disabled">
+                          Log:<input type="text" name="log_no" id="log_no" size="2" value="4" disabled="disabled">
+                          Block:<input type="text" name="block_no" id="block_no" size="2" value="8" disabled="disabled"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Author</td>
+                        <td style="text-align: left;"><select id="author" disabled="disabled" class="select update" style="width:290px;">
+                          <option>Randall Hyde</option>
+                          <option selected="selected">Peter Lars</option>
+                          <option>Richard L. Halterman</option>
+                          <option>Jeremy Keith</option>
+                          <option>Patrick Griffiths</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Publisher's Name</td>
+                        <td style="text-align: left;"><select id="publisher" disabled="disabled" class="select update" style="width:290px;">
+                          <option>Southern Adventist University</option>
+                          <option selected="selected">Loyola University Chicago</option>
+                          <option>Book Apart Jeffrey Zeldmannion></option>
+                          <option>New Riders Press</option>
+                          <option>Payload Media</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Publication Date</td>
+                        <td style="text-align: left;"><input type="text" class="" name="PublicationDate" id="publicationDate" placeholder="Publication Date" size="35" value="4-Mar-08" disabled="disabled" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Edition</td>
+                        <td style="text-align: left;"><input type="text" class="" name="Edition" id="edition" placeholder="Edition" size="35" value="first edition" disabled="disabled" /></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;">Arrival Date</td>
+                      <td style="text-align: left;"><input type="text" name="aDate" id="aDate" size="35" value="27-Nov-19" disabled="disabled"></td>
+                    </tr>
+                     <tr>
+                        <td style="text-align: left;">Quantity</td>
+                        <td style="text-align: left;"><input type="text" class="" name="Quantity" id="Quantity" placeholder="Quantity" size="35" value="20" disabled="disabled" /></td>
+                    </tr>
+                     <tr>
+                        <td style="text-align: left;">Price</td>
+                        <td style="text-align: left;"><input type="text" class="" name="Price" id="Price" placeholder="Price" size="35" value="10000 Ks" disabled="disabled" /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="text-align: left;">Discount%</td>
+                        <td style="text-align: left;"><input type="text" class="" name="discount" id="discount" placeholder="Edition" size="35" value="20%" disabled="disabled" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Supplier</td>
+                        <td style="text-align: left;">
+                          <select id="supplier" disabled="disabled" class="select update" style="width:290px;">
+                            <option>John</option>
+                            <option selected="selected">James</option>
+                            <option>Jack</option>
+                            <option>Sarah</option>
+                            <option>Derry</option>
+                          </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Status</td>
+                        <td style="text-align: left;">
+                          <select id="status" disabled="disabled" class="select update" style="width:290px;">
+                            <option>Return</option>
+                            <option selected="selected">Received</option>
+                            <option>Order</option>
+                            <option>Delay</option>
+                          </select>
+                        </td>
+                    </tr>
+                    
+          
+                    <tr>
+                        <td></td>
+                        <td style="text-align: left;"><input type="submit" value="Confirm" class="btn addbtn" onclick="myFunction();">
+                        
+                        <button class="btn smtbtn" onclick="window.open('IVMS_BOK_0104.html');">Cancel</button></td>
+                        <td></td>
+                    </tr>
+                    </table>
+            </form>
+            </div>  
+        </div>         
+     </div>
+</div>
+<br>  
+
+<footer>
+  <div class="foot1">
+    <hr class="hr_css">
+    <p>Copyright &copy; 2019 IVMP</p>
+      <p style="color:#999999;">Designed by <span style="color: #2d8659;font-size:13px;font-weight:bold;">UIT Students</span></p>
+  </div>
+</footer>
+</div>
+
+
+
+<!--sidenav script-->
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+<!--all in one page script-->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+ <script type="text/javascript">
+        function processForm(){
+            var id=document.getElementById("id").value;
+            localStorage.setItem('id',id);
+
+            var title=document.getElementById("title").value;
+            localStorage.setItem('title',title);
+
+            var category=document.getElementById("category").value;
+            localStorage.setItem('category',category);
+
+            var shelf_no=document.getElementById("shelf_no").value;
+            localStorage.setItem('shelf_no',shelf_no);
+
+            var log_no=document.getElementById("log_no").value;
+            localStorage.setItem("log_no",log_no);
+
+            var block_no=document.getElementById("block_no").value;
+            localStorage.setItem("block_no",block_no);
+
+            var author=document.getElementById("author").value;
+            localStorage.setItem('author',author);
+
+            var publisher=document.getElementById("publisher").value;
+            localStorage.setItem('publisher',publisher);
+
+            var publicationDate=document.getElementById("publicationDate").value;
+            localStorage.setItem('publicationDate',publicationDate);
+
+            var edition=document.getElementById("edition").value;
+            localStorage.setItem('edition',edition);
+
+            var aDate=document.getElementById("aDate").value;
+            localStorage.setItem('aDate',aDate);
+
+            var Quantity=document.getElementById("Quantity").value;
+            localStorage.setItem('Quantity',Quantity);
+
+            var Price=document.getElementById("Price").value;
+            localStorage.setItem('Price',Price);
+            
+            
+            
+            var discount=document.getElementById("discount").value;
+            localStorage.setItem('discount',discount);
+
+            var supplier=document.getElementById("supplier").value;
+            localStorage.setItem('supplier',supplier);
+
+            var status=document.getElementById("status").value;
+            localStorage.setItem('status',status);
+            
+        }
+         function myFunction() {
+          alert("Update Successful!!!!")
+          window.open('IVMS_BOK_0101(2).html');
+}
+    </script>
+
+    <script type="text/javascript">
+        let id=localStorage.getItem("id");
+        document.getElementById("id").value=id;
+
+        let title=localStorage.getItem("title");
+        document.getElementById("title").value=title;
+
+        let category=localStorage.getItem("category");
+        document.getElementById("category").value=category;
+
+        let shelf_no=localStorage.getItem("shelf_no");
+        document.getElementById("shelf_no").value=shelf_no;
+
+        let log_no=localStorage.getItem("log_no");
+        document.getElementById("log_no").value=log_no;
+
+        let block_no=localStorage.getItem("block_no");
+        document.getElementById("block_no").value=block_no;
+
+        let author=localStorage.getItem("author");
+        document.getElementById("author").value=author;
+
+        let publisher=localStorage.getItem("publisher");
+        document.getElementById("publisher").value=publisher;
+
+        let publicationDate=localStorage.getItem("publicationDate");
+        document.getElementById("publicationDate").value=publicationDate;
+
+        let edition=localStorage.getItem("edition");
+        document.getElementById("edition").value=edition;
+
+        let aDate=localStorage.getItem("aDate");
+        document.getElementById("aDate").value=aDate;
+
+        let Quantity=localStorage.getItem("Quantity");
+        document.getElementById("Quantity").value=Quantity;
+
+        let Price=localStorage.getItem("Price");
+        document.getElementById("Price").value=Price;
+
+        let discount=localStorage.getItem("discount");
+        document.getElementById("discount").value=discount;
+
+        let supplier=localStorage.getItem("supplier");
+        document.getElementById("supplier").value=supplier;
+
+        let status=localStorage.getItem("status");
+        document.getElementById("status").value=status;
+    </script>
+
+    
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

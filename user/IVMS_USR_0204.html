@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='./script/grid_entry.js'></script>
+<link rel="stylesheet" href="../css/style.css">
+
+    <!-- Font Icon -->
+   
+</head>
+<body>
+   <!--TopnavIVMS-->
+<div class="topnav">
+  <a class="active" href="#home"><img src="../img/multi-inventory-logo.png" alt="Smiley face" height="62" width="92">
+  </a>
+  <a href="#" class="title">Inventory Management System</a>
+  <div class="topnav-right">
+    <a href="#" class="down">User</a>
+    <a href="#"><i class='fa fa-user-circle' style="color:#00cc99;font-size:30px"></i></a>
+    <a href="#" class="down"><i class="fas fa-chevron-down"></i></a>
+  </div>
+</div>
+
+<!--sidenav-->
+<div class="sidenav">
+  <a href="../IVMS_HOM_0000.html"><i class="fa fa-desktop"></i>&nbsp&nbspDashboard</a>
+  <button class="dropdown-btn"><i class="fas fa-book-open"></i>&nbsp&nbsp&nbsp&nbspBook
+   <i class="fa fa-caret-down"></i>
+  </button>
+  
+  <div class="dropdown-container" >
+    <a href="../book/IVMS_BOK_0101.html">Stock In</a>
+    <a href="../book/IVMS_BOK_0201.html">Stock Out</a>
+  </div>
+   <button class="dropdown-btn"><i class="fas fa-tshirt"></i>&nbsp&nbsp&nbsp&nbspFashion 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../fashion/IVMS_FHN_0101.html">Stock In</a>
+    <a href="../fashion/IVMS_FHN_0201.html">Stock Out</a>
+  </div>
+  <button class="dropdown-btn"><i class='fas fa-shopping-cart'></i>&nbsp&nbsp&nbsp&nbspCosmetic 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../cosmetic/IVMS_COS_0101.html">Stock In</a>
+    <a href="../cosmetic/IVMS_COS_0201.html">Stock Out</a>
+  </div>
+  <button class="dropdown-btn"><i class="fas fa-tools"></i>&nbsp&nbsp&nbsp&nbspSetup 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../setup/IVMS_STP_0101.html">Category</a>
+    <a href="../setup/IVMS_STP_0301.html">Supplier</a>
+    <a href="../setup/IVMS_STP_0401.html">Buyer</a>
+    <a href="../setup/IVMS_STP_0502.html">Status</a>
+    <a href="../setup/IVMS_STP_0602.html">Address</a>
+    <a href="./setup/IVMS_STP_0702.html">Country</a>
+    <a href="../setup/IVMS_STP_0801.html">Brand</a>
+    <a href="../setup/IVMS_STP_0901.html">Author</a>
+    <a href="../setup/IVMS_STP_1001.html">Publisher</a>
+    <a href="../setup/IVMS_REP_0901.html">Report</a>
+  </div>
+  <a href="#"><i class="fa fa-user"></i>&nbsp&nbsp&nbsp&nbspManagement</a>
+</div>
+
+
+<div class="main">
+  <div class="main-content"> 
+    <div class="update-content">
+    <form action="IVMS_USR_0205.html" onsubmit="processForm();">
+       <p class="head_title" style="width:25%;">User Update</p>
+                        <!-- <h2 class="form-title">Create account</h2> -->
+                        <table>
+                    <tr>
+                        
+                        <td style="text-align: left;">ID</td>
+                        <td style="text-align: left;"><input type="text" class="" name="id" id="id" placeholder="ID" size="35" value="User0001"/></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Name</td>
+                        <td style="text-align: left;"><input type="text" class="" name="name" id="name" placeholder="Name" size="35" value="Daw Mya Mya" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Password</td>
+                        <td style="text-align: left;"><input type="text" class="" name="password" id="password" placeholder="Password" size="35" value="myamya123" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Email</td>
+                        <td style="text-align: left;"><input type="text" class="" name="email" id="email" placeholder="Email" size="35" value="myamay@gmail.com" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Phone</td>
+                        <td style="text-align: left;"><input type="text" class="" name="phone" id="phone" placeholder="Phone" size="35" value="09468294788" /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Address</td>
+                        <td style="text-align: left;"><input type="text" class="" name="Address" id="address" placeholder="Address" size="35" value="No.12, Mya Street" /></td>
+                    </tr>
+                    <td></td>
+                        <td style="text-align: left;"><input type="submit" value="Update" class="btn addbtn">
+                        <button class="btn smtbtn" style="background: red;" onclick="myFunction();"><a href="IVMS_USR_0201.html" style="text-decoration:none;"><span style="color:#fff">Delete</span></a></button>
+<button class="btn smtbtn" style="color:white;" onclick="myFunction1();">
+<a href="IVMS_USR_0204.html" style="text-decoration:none;"><span style="color:#fff">Cancel</span></a>
+</button></td>
+                    </tr>
+                    </table>
+                    </form>
+                
+     </div>
+<footer>
+  <div class="foot" style="width:80%;">
+    <hr class="hr_css">
+    <p>Copyright &copy; 2019 IVMP</p>
+      <p style="color:#999999;">Designed by <span style="color: #2d8659;font-size:13px;font-weight:bold;">UIT Students</span></p>
+  </div>
+</footer>
+ </div>
+</div>
+
+    
+    <script type="text/javascript">
+        function processForm(){
+            var id=document.getElementById("id").value;
+            localStorage.setItem('id',id);
+            var title=document.getElementById("title").value;
+            localStorage.setItem('title',title);
+            var author=document.getElementById("author").value;
+            localStorage.setItem('author',author);
+            var publisher=document.getElementById("publisher").value;
+            localStorage.setItem('publisher',publisher);
+            var edition=document.getElementById("edition").value;
+            localStorage.setItem('edition',edition);
+            var publicationDate=document.getElementById("publicationDate").value;
+            localStorage.setItem('publicationDate',publicationDate);
+            var authorContact=document.getElementById("authorContact").value;
+            localStorage.setItem('authorContact',authorContact);
+            var publisherPhone=document.getElementById("publisherPhone").value;
+            localStorage.setItem('publisherPhone',publisherPhone);
+            var publisherAddress=document.getElementById("publisherAddress").value;
+            localStorage.setItem('publisherAddress',publisherAddress);
+            var postalCode=document.getElementById("postalCode").value;
+            localStorage.setItem('postalCode',postalCode);
+        }
+
+        function myFunction() {
+          var txt;
+          var r = confirm("Are you sure?");
+          if (r == true) {
+            var t = confirm("Delete Successfully!!!");
+            if (t == true) {
+            window.open('IVMS_USR_0201(2).html');}
+          } else {
+            window.open('IVMS_USR_0204.html');
+          }
+        }
+
+        function myFunction1() {
+          var txt;
+          var r = confirm("Are you sure?");
+          if (r == true) {
+            window.open('IVMS_USR_0201(2).html');
+          }
+        }
+    </script>
+
+    <!--sidenav script-->
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+<!--all in one page script-->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+ 
+</body>
+</html>

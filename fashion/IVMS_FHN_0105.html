@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script src='./script/grid_entry.js'></script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body onload="createTable()">
+
+<!--TopnavIVMS-->
+<div class="topnav">
+  <a class="active" href="#home"><img src="../img/multi-inventory-logo.png" alt="Smiley face" height="62" width="92">
+  </a>
+  <a href="#" class="title">Inventory Management System</a>
+  <div class="topnav-right">
+    <a href="#about" class="down">User</a>
+    <a href="#about"><i class='fa fa-user-circle' style="color:#00cc99;font-size:30px"></i></a>
+    <a href="#about" class="down"><i class="fas fa-chevron-down"></i></a>
+  </div>
+</div>
+
+<!--sidenav-->
+<div class="sidenav">
+  <a href="../IVMS_HOM_0000.html"><i class="fa fa-desktop"></i>&nbsp&nbspDashboard</a>
+  <button class="dropdown-btn"><i class="fas fa-book-open"></i>&nbsp&nbsp&nbsp&nbspBook
+   <i class="fa fa-caret-down"></i>
+  </button>
+  
+  <div class="dropdown-container" >
+    <a href="../book/IVMS_BOK_0201.html">Stock In</a>
+    <a href="../book/IVMS_BOK_0201.html">Stock Out</a>
+  </div>
+   <button class="dropdown-btn"><i class="fas fa-tshirt"></i>&nbsp&nbsp&nbsp&nbspFashion 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="#">Stock In</a>
+    <a href="IVMS_FHN_0201.html">Stock Out</a>
+  </div>
+  <button class="dropdown-btn"><i class='fas fa-shopping-cart'></i>&nbsp&nbsp&nbsp&nbspCosmetic 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../cosmetic/IVMS_COS_0101.html">Stock In</a>
+    <a href="../cosmetic/IVMS_COS_0201.html">Stock Out</a>
+  </div>
+  <button class="dropdown-btn"><i class="fas fa-tools"></i>&nbsp&nbsp&nbsp&nbspSetup 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../setup/IVMS_STP_0101.html">Category</a>
+    <a href="../setup/IVMS_STP_0301.html">Supplier</a>
+    <a href="../setup/IVMS_STP_0401.html">Buyer</a>
+    <a href="../setup/IVMS_STP_0502.html">Status</a>
+    <a href="../setup/IVMS_STP_0602.html">Address</a>
+    <a href="../setup/IVMS_STP_0702.html">Country</a>
+    <a href="../setup/IVMS_STP_0801.html">Brand</a>
+    <a href="../setup/IVMS_STP_0901.html">Author</a>
+    <a href="../setup/IVMS_STP_1001.html">Publisher</a>
+    <a href="../setup/IVMS_REP_0901.html">Report</a>
+  </div>
+  <a href="../user/IVMS_USR_0201.html"><i class="fa fa-user"></i>&nbsp&nbsp&nbsp&nbspManagement</a>
+</div>
+
+<div class="main">
+  <div class="main-content">
+    <div class="update-content">
+    <form method="get" action="IVMS_FHN_0101(2).html">
+    <p class="head_title" style="width:50%;">Confirm Fashion Update</p> 
+                        <!-- <h2 class="form-title">Create account</h2> -->
+                        <table>
+                    <tr>
+                        
+                        <td style="text-align: left;">Item ID</td>
+                        <td style="text-align: left;"><input type="text" class="" name="id" id="id" placeholder="ID" size="35" value="F0011" class="table_input" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Item Name</td>
+                        <td style="text-align: left;"><input type="text" class="" name="item_name" id="item_name" placeholder="Item Name" size="35" value="Shirt" disabled /></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;">Category</td>
+                      <td style="text-align: left;"><select id="category" class="select update" style="width:290px;" disabled>
+
+        <option selected="selected">Clothing</option>
+        <option>Clothing</option>
+        <option>Shoes</option>
+        <option>Accessories</option>
+      </select></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;">Log</td>
+                      <td style="text-align: left;">Shelf<input type="text" name="shelf_no" id="shelf_no" size="2" value="3" disabled>
+                          Log<input type="text" name="log_no" id="log_no" size="2" value="4">
+                          Block<input type="text" name="block_no" id="block_no" size="2" value="8"></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Gender</td>
+                        <td style="text-align: left;"><select id="gender" class="select update" style="width:290px;" disabled>
+                          <option selected="selected">Male</option>
+                          <option>Female</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Color</td>
+                        <td style="text-align: left;"><select id="color" class="select update" style="width:290px;" disabled>
+                          <option>Black</option>
+                          <option selected="selected">White</option>
+                          <option>Red</option>
+                          <option>Blue</option>
+                          <option>Grey</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Size</td>
+                        <td style="text-align: left;"><select id="size" class="select update" style="width:290px;" disabled>
+                          <option>S</option>
+                          <option selected="selected">M</option>
+                          <option>L</option>
+                          <option>XL</option>
+                          <option>XXL</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Brand Name</td>
+                        <td style="text-align: left;"><input type="text" class="" name="Brand Name" id="Brand Name" placeholder="Brand Name" size="35" value="Nike" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Counrty Name</td>
+                        <td style="text-align: left;"><input type="text" class="" name="Counrty Name" id="Counrty Name" placeholder="Counrty Name" size="35" value="USA" disabled /></td>
+                    </tr>
+                    <tr>
+                      <td style="text-align: left;">Arrival Date</td>
+                      <td style="text-align: left;"><input type="text" name="aDate" size="35" id="aDate" value="27-Nov-19" disabled></td>
+                    </tr>
+                     <tr>
+                        <td style="text-align: left;">Quantity</td>
+                        <td style="text-align: left;"><input type="text" class="" name="Quantity" id="Quantity" placeholder="Quantity" size="35" value="20" disabled /></td>
+                    </tr>
+                     <tr>
+                        <td style="text-align: left;">Price</td>
+                        <td style="text-align: left;"><input type="text" class="" name="Price" id="Price" placeholder="Price" size="35" value="10000 Ks" disabled /></td>
+                    </tr>
+                    
+                    <tr>
+                        <td style="text-align: left;">Discount%</td>
+                        <td style="text-align: left;"><input type="text" class="" name="discount" id="discount" placeholder="Edition" size="35" value="20%" disabled /></td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Supplier</td>
+                        <td style="text-align: left;">
+                          <select id="supplier" class="select update" style="width:290px;" disabled>
+                            <option>John</option>
+                            <option selected="selected">James</option>
+                            <option>Jack</option>
+                            <option>Sarah</option>
+                            <option>Derry</option>
+                          </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="text-align: left;">Status</td>
+                        <td style="text-align: left;">
+                          <select id="status" class="select update" style="width:290px;" disabled>
+                            <option>Return</option>
+                            <option selected="selected">Received</option>
+                            <option>Order</option>
+                            <option>Delay</option>
+                          </select>
+                        </td>
+                    </tr>
+                    
+          
+                    <tr>
+                        <td></td>
+                        <td style="text-align: left;"><input type="submit" value="Confirm" class="btn addbtn" onclick="alert('Update Successfully!!!')">                        
+                        <button class="btn smtbtn"><a href="IVMS_FHN_0104.html" style="text-decoration:none;"><span style="color:#fff">Cancel</span></a></button></td>
+                        <td></td>
+                    </tr>
+                    </table>
+            </form>
+            </div>  
+            <br>
+     <footer>
+  <div class="foot1" style="width:80%">
+    <hr class="hr_css">
+    <p>Copyright &copy; 2019 IVMP</p>
+      <p style="color:#999999;">Designed by <span style="color: #2d8659;font-size:13px;font-weight:bold;">UIT Students</span></p>
+  </div>
+</footer>
+        </div>         
+     </div>
+</div>
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+<!--all in one page script-->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+    <script type="text/javascript">
+        let id=localStorage.getItem("id");
+        document.getElementById("id").value=id;
+
+        let item_name=localStorage.getItem("item_name");
+        document.getElementById("item_name").value=item_name;
+
+        let category=localStorage.getItem("category");
+        document.getElementById("category").value=category;
+
+        let shelf_no=localStorage.getItem("shelf_no");
+        document.getElementById("shelf_no").value=shelf_no;
+
+        let log_no=localStorage.getItem("log_no");
+        document.getElementById("log_no").value=log_no;
+
+        let block_no=localStorage.getItem("block_no");
+        document.getElementById("block_no").value=block_no;
+
+        let gender=localStorage.getItem("gender");
+        document.getElementById("gender").value=gender;
+
+        let color=localStorage.getItem("color");
+        document.getElementById("color").value=color;
+
+        let size=localStorage.getItem("size");
+        document.getElementById("size").value=size;
+
+        let Brand Name=localStorage.getItem("Brand Name");
+        document.getElementById("Brand Name").value=Brand Name;
+
+        let Country Name=localStorage.getItem("Country Name");
+        document.getElementById("Country Name").value=Country Name;
+
+        let aDate=localStorage.getItem("aDate");
+        document.getElementById("aDate").value=aDate;
+
+        let Quantity=localStorage.getItem("Quantity");
+        document.getElementById("Quantity").value=Quantity;
+
+        let Price=localStorage.getItem("Price");
+        document.getElementById("Price").value=Price;
+
+        let discount=localStorage.getItem("discount");
+        document.getElementById("discount").value=discount;
+
+        let supplier=localStorage.getItem("supplier");
+        document.getElementById("supplier").value=supplier;
+
+        let status=localStorage.getItem("status");
+        document.getElementById("status").value=status;
+    </script>
+
+    
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

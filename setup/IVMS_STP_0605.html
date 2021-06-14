@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<!--TopnavIVMS-->
+<div class="topnav">
+  <a class="active" href="#home"><img src="../img/multi-inventory-logo.png" alt="Smiley face" height="62" width="92">
+  </a>
+  <a href="#" class="title">Inventory Management System</a>
+  <div class="topnav-right">
+    <a href="#" class="down">User</a>
+    <a href="#"><i class='fa fa-user-circle' style="color:#00cc99;font-size:30px"></i></a>
+    <a href="#" class="down"><i class="fas fa-chevron-down"></i></a>
+  </div>
+</div>
+
+<!--sidenav-->
+<div class="sidenav">
+  <a href="../IVMS_HOM_0000.html"><i class="fa fa-desktop"></i>&nbsp&nbspDashboard</a>
+  <button class="dropdown-btn"><i class="fas fa-book-open"></i>&nbsp&nbsp&nbsp&nbspBook
+   <i class="fa fa-caret-down"></i>
+  </button>
+  
+  <div class="dropdown-container" >
+    <a href="../book/IVMS_BOK_0101.html">Stock In</a>
+    <a href="../book/IVMS_BOK_0201.html">Stock Out</a>
+  </div>
+   <button class="dropdown-btn"><i class="fas fa-tshirt"></i>&nbsp&nbsp&nbsp&nbspFashion 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../fashion/IVMS_FHN_0101.html">Stock In</a>
+    <a href="../fashion/IVMS_FHN_0201.html">Stock Out</a>
+  </div>
+  <button class="dropdown-btn"><i class='fas fa-shopping-cart'></i>&nbsp&nbsp&nbsp&nbspCosmetic 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../cosmetic/IVMS_COS_0101.html">Stock In</a>
+    <a href="../cosmetic/IVMS_COS_0201.html">Stock Out</a>
+  </div>
+  <button class="dropdown-btn"><i class="fas fa-tools"></i>&nbsp&nbsp&nbsp&nbspSetup 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="IVMS_STP_0101.html">Category</a>
+    <a href="IVMS_STP_0301.html">Supplier</a>
+    <a href="IVMS_STP_0401.html">Buyer</a>
+    <a href="IVMS_STP_0502.html">Status</a>
+    <a href="IVMS_STP_0602.html">Address</a>
+    <a href="IVMS_STP_0702.html">Country</a>
+    <a href="IVMS_STP_0801.html">Brand</a>
+    <a href="IVMS_STP_0901.html">Author</a>
+    <a href="IVMS_STP_1001.html">Publisher</a>
+    <a href="IVMS_REP_0901.html">Report</a>
+  </div>
+  <a href="../user/IVMS_USR_0201.html"><i class="fa fa-user"></i>&nbsp&nbsp&nbsp&nbspManagement</a>
+</div>
+
+<div class="main">
+  <div class="main-content">
+  <br>
+  <form action="confirm_edit2.html" onsubmit="processUpdate();">
+  <table>
+    <tr>
+      <td>Address id</td>
+      <td><input type="text" name="Address_id" id="Address_id" value="1" ></td>
+    </tr>
+    <tr>
+      <td>Township</td>
+      <td><input type="Township" name="Township" id="Township" value="Hlaing"></td>
+    </tr>
+        <tr>
+      <td>Division</td>
+      <td><input type="Division" name="Division" id="Division" value="Yangon"></td>
+    </tr>
+        <tr>
+      <td>Country</td>
+      <td><input type="Country" name="Country" id="Country" value="Myanmar"></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="submit" name="" value="Update">
+      <button><a href="IVMS_STP_0604.html">Cancel</a></button></td>
+    </tr>
+  </table>
+</form>
+</div>
+</div>  
+
+<footer>
+  <div class="foot" style="width:80%">
+    <hr class="hr_css">
+    <p>Copyright &copy; 2019 IVMP</p>
+      <p style="color:#999999;">Designed by <span style="color: #2d8659;font-size:13px;font-weight:bold;">UIT Students</span></p>
+  </div>
+</footer>
+</div>
+</div>
+
+
+
+<!--sidenav script-->
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+<!--all in one page script-->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+<script type="text/javascript">
+  function addConfirm(){
+    var add=document.getElementById("add").value;
+    localStorage.setItem('add',add);
+  }
+</script>
+
+<script type="text/javascript">
+  function processUpdate() {
+    var Address_id=document.getElementById("Address_id").value;
+            localStorage.setItem('Address_id',Address_id);
+        var Township=document.getElementById("Township").value;
+          localStorage.setItem('Township',Township);
+           var Division=document.getElementById("Division").value;
+          localStorage.setItem('Division',Division);
+           var Country=document.getElementById("Country").value;
+          localStorage.setItem('Country',Country);
+        
+</script>
+
+
+
+</body>
+</html>

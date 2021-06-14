@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round|Open+Sans">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+    var actions = $("table td:last-child").html();
+    // Append table with add row form on add new button click
+    $(".add-new").click(function(){
+       // $(this).attr("disabled", "disabled");
+        var index = $("table tbody tr:last-child").index();
+        var row = '<tr>' +
+        '<td><input type="text" class="form-control" name="Book ID" id="bid"><button onclick="idTest();">Search</button></td>'+
+        '<td><select name="Category"><option value="cl">Computer Language</option><option value="maths">Mathamatics</option><option value="ds">Data Science</option><option value="nc">Network and Communication</option><option value="se">Software Engineering</option><option value="wp">Web Programming</option></select></td>' +
+            '<td><input type="text" class="form control" name="Title" id="Title"></td>'+
+             '<td><input type="text" class="form control" name="Log" id="Log"></td>'+
+             '<td><input type="text" class="form-control" name="Author" id="Author"></td>' +
+            '<td><input type="text" class="form-control" name="Publisher" id="Publisher"></td>' +
+            '<td><input type="text" class="form-control" name="Publication Date" id="Publication Date"></td>' +
+            '<td><input type="text" class="form-control" name="Edition" id="Edition"></td>' +
+            '<td><input type="text" class="form-control" name="Arrival Date" id="Arrival Date"></td>' +
+            '<td><input type="text" class="form-control" name="Quantity" id="Quantity"></td>' +
+            '<td><input type="text" class="form-control" name="Price" id="Price"></td>' +
+            '<td><input type="number" class="form-control" name="Discount Percent" id="Discount Percent"></td>' +
+            '<td><select><option>Zaw Zaw</option><option>Kyaw Kyaw</option><option>Soe Soe</option></select></td>' +
+
+            '<td><select name="Status"><option value="Return">Returned Item</option><option value="Delayed">Delayed Item</option><option value="Damaged">Damaged Item</option><option value="Run out">Run out Item</option></select></td>'+'<td>' + 
+            '<a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a></td>'+'</tr>';
+        $("table").append(row);     
+        $("table tbody tr").eq(index + 1).find(".edit").toggle();
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+  // Add row on add button click
+
+  // Edit row on edit button click
+  
+  // Delete row on delete button click
+  $(document).on("click", ".delete", function(){
+        $(this).parents("tr").remove();
+    
+    });
+});
+</script>
+</head>
+<body>
+<!--TopnavIVMS-->
+<div class="topnav">
+  <a class="active" href="#home"><img src="../img/multi-inventory-logo.png" alt="Smiley face" height="62" width="92">
+  </a>
+  <a href="#" class="title">Inventory Management System</a>
+  <div class="topnav-right">
+    <a href="#" class="down">User</a>
+    <a href="#"><i class='fa fa-user-circle' style="color:#00cc99;font-size:30px"></i></a>
+    <a href="#" class="down"><i class="fas fa-chevron-down"></i></a>
+  </div>
+</div>
+
+<!--sidenav-->
+<div class="sidenav">
+  <a href="../IVMS_HOM_0000.html"><i class="fa fa-desktop"></i>&nbsp&nbspDashboard</a>
+  <button class="dropdown-btn"><i class="fas fa-book-open"></i>&nbsp&nbsp&nbsp&nbspBook
+   <i class="fa fa-caret-down"></i>
+  </button>
+  
+  <div class="dropdown-container" >
+    <a href="IVMS_BOK_0101.html">Stock In</a>
+    <a href="IVMS_BOK_0201.html">Stock Out</a>
+  </div>
+   <button class="dropdown-btn"><i class="fas fa-tshirt"></i>&nbsp&nbsp&nbsp&nbspFashion 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../fashion/IVMS_FHN_0101.html">Stock In</a>
+    <a href="../fashion/IVMS_FHN_0201.html">Stock Out</a>
+  </div>
+  <button class="dropdown-btn"><i class='fas fa-shopping-cart'></i>&nbsp&nbsp&nbsp&nbspCosmetic 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../cosmetic/IVMS_COS_0101.htmll">Stock In</a>
+    <a href="../cosmetic/IVMS_COS_0201.html">Stock Out</a>
+  </div>
+  <button class="dropdown-btn"><i class="fas fa-tools"></i>&nbsp&nbsp&nbsp&nbspSetup 
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="../setup/IVMS_STP_0101.html">Category</a>
+    <a href="../setup/IVMS_STP_0301.html">Supplier</a>
+    <a href="../setup/IVMS_STP_0401.html">Buyer</a>
+    <a href="../setup/IVMS_STP_0502.html">Status</a>
+    <a href="../setup/IVMS_STP_0602.html">Address</a>
+    <a href="../setup/IVMS_STP_0702.html">Country</a>
+    <a href="../setup/IVMS_STP_0801.html">Brand</a>
+    <a href="../setup/IVMS_STP_0901.html">Author</a>
+    <a href="../setup/IVMS_STP_1001.html">Publisher</a>
+    <a href="../setup/IVMS_REP_0901.html">Report</a>
+  </div>
+  <a href="../user/IVMS_USR_0201.html"><i class="fa fa-user"></i>&nbsp&nbsp&nbsp&nbspManagement</a>
+</div>
+
+<div class="main">
+  <div class="main-content">
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <br>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn add-item-btn add-new"><i class="fa fa-plus"></i>&nbsp&nbspAdd</button>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                         <th>Book ID</th>
+                        <th>Category</th>
+                        <th>Title</th>
+                        <th>Log</th>
+                        <th>Author</th>
+                        <th>Publisher</th>
+                        <th>Publication Date</th>
+                        <th>Edition</th>
+                        <th>Arrival Date</th>
+                        <th>Quantity </th>
+                        <th>Price </th>
+                        <th>Discount Percent </th>
+                        <th>Supplier </th>
+                        <th> Status </th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>  
+    <script>
+        function idTest(){
+        
+        var bid=document.getElementById("bid").value;
+        if(bid=="B0016"){
+            window.open("IVMS_BOK_0202_2.html");
+        }
+        else{
+            alert("Do not exist!!!!")
+        }
+    }
+        </script> 
+
+        <!--sidenav script-->
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+<!--all in one page script-->
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>  
+</body>
+</html>                            
+
